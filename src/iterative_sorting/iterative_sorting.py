@@ -38,22 +38,24 @@ def selection_sort(arr):
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
     # Your code here
-    for i in range(0, len(arr) - 1):
-        print(i, "[i TOP LEVEL]")
+    for i in range(len(arr)):
+        # print(i, "[i TOP LEVEL]")
+        print(0, len(arr))
         for j in range(0, len(arr) - 1 - i):
-            print(j, "[J SECOND]")
+            # print(j, "[J SECOND]")
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
     return arr
 
+    # STRETCH: implement the Count Sort function below
 
-arr = [1, 4, 6, 2, 7, 9, 55]
-print(bubble_sort(arr))
+    def count_sort(arr, maximum=-1):
+        # Your code here
+
+        return arr
 
 
-# STRETCH: implement the Count Sort function below
-def count_sort(arr, maximum=-1):
-    # Your code here
-
-    return arr
+if __name__ == "__main__":
+    arr = [1, 4, 6, 2, 7, 9, 55]
+    print(bubble_sort(arr))
