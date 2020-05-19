@@ -1,10 +1,10 @@
-def linear_search(arr, target):
-    # Your code here
+# [1, 2, 3, 4, 5, 6, 7, 9, 10]
 
-    return -1   # not found
+# assume arr is sorted
+# returns the index of the target if it exists in the arr
+# otherwise, returns -1
 
 
-# Write an iterative implementation of Binary Search
 def binary_search(arr, target):
     # let's figure out the total size of the arr
     left = 0
@@ -32,5 +32,4 @@ def binary_search(arr, target):
             right = mid - 1
 
     # we didn't find the element
-
-    return -1  # not found
+    return -1
